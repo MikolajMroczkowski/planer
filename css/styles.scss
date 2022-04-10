@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+html {
+  font-family: 'Lato', sans-serif;
+  height: 100%;
+
+  .body {
+    flex-wrap: nowrap;
+  }
+
+  body {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    noscript {
+      z-index: 10;
+      background: #000;
+      display: flex;
+      height: 100%;
+      overflow: hidden;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      width: 100%;
+
+      h1 {
+        font-size: 60px;
+        color: white;
+
+        b {
+          font-weight: bold;
+        }
+      }
+    }
+
+    .main {
+      background-color: #eaeaea;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-content: flex-start;
+
+      h1 {
+        margin: 10px;
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+
+        b {
+          font-weight: bold;
+        }
+      }
+
+      button {
+        all: unset;
+        cursor: pointer;
+        width: 67px;
+        height: 67px;
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+        i{
+         font-size: 40px;
+        }
+        p {
+          width: 100%;
+          font-size: 15px;
+        }
+      }
+    }
+
+    .sidebar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: flex-start;
+      padding: 0.5%;
+      height: 98%;
+      background-color: #cecece;
+      width: 35px;
+      transition: 0.5s;
+
+      a {
+        text-decoration: none;
+        align-self: flex-start;
+        display: flex;
+        flex-wrap: nowrap;
+        cursor: pointer;
+        margin: 2px;
+        width: 100%;
+        color: #777;
+
+        &:hover, &:focus {
+          color: black;
+        }
+
+        p {
+          display: inline;
+          width: 0;
+          overflow: hidden;
+          white-space: nowrap;
+          font-size: 0;
+          margin-left: 5px;
+        }
+
+        i {
+          display: inline;
+          font-size: 30px;
+        }
+      }
+
+      &:hover, &:focus {
+        justify-content: flex-start;
+        justify-items: flex-start;
+
+        p {
+          height: auto;
+          width: auto;
+          font-size: 20px;
+        }
+
+        transition: 0.5s;
+        width: 250px;
+      }
+
+      .down {
+        align-self: flex-end;
+      }
+
+      .active {
+        color: rgba(0, 0, 0, 0.7);
+      }
+    }
+  }
+
+  .logreg {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: #ddd;
+
+    main {
+      margin-top: 10%;
+      background: #eee;
+      width: 40%;
+      min-width: 500px;
+      padding: 25px 15px;
+      border-radius: 10px;
+
+      hr {
+        all: unset;
+        width: 100%;
+      }
+
+      h1 {
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      form {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        input:not([type=checkbox]) {
+          all: unset;
+          background: #ffffff;
+          padding: 5px;
+          margin: 5px;
+          width: 80%;
+          font-size: 19px;
+        }
+
+        input[type=submit] {
+          justify-self: flex-end;
+          width: auto;
+          font-size: 20px;
+          padding: 7px;
+        }
+
+        #passPowerBox {
+          width: 80%;
+          background: #ffcccc;
+          display: none;
+
+          p {
+            width: 100%;
+            text-align: center;
+            padding: 5px;
+            font-size: 19px;
+          }
+        }
+
+        .err {
+          color: red;
+          text-align: left;
+        }
+
+        .informer {
+          color: #aaa;
+          text-align: center;
+          font-style: italic;
+        }
+
+        .success {
+          text-align: left;
+          color: forestgreen;
+        }
+        .left{
+          text-align: left;
+        }
+        p {
+          width: 80%;
+          text-align: right;
+
+          a {
+            margin: 1px;
+            color: #787878;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
