@@ -23,6 +23,23 @@ html {
         color: white; }
         html body noscript h1 b {
           font-weight: bold; }
+    html body .modal {
+      z-index: 5;
+      background-color: rgba(0, 0, 0, 0.4);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      html body .modal .box {
+        background-color: #dddddd;
+        padding: 20px;
+        border-radius: 20px;
+        height: 75%;
+        width: 60%; }
     html body .main {
       background-color: #eaeaea;
       width: 100%;
@@ -30,6 +47,10 @@ html {
       justify-content: center;
       flex-wrap: wrap;
       align-content: flex-start; }
+      html body .main h2 {
+        font-size: 20px;
+        width: 100%;
+        text-align: center; }
       html body .main h1 {
         margin: 10px;
         font-size: 30px;
@@ -37,6 +58,27 @@ html {
         text-align: center; }
         html body .main h1 b {
           font-weight: bold; }
+      html body .main .list td {
+        padding: 10px; }
+        html body .main .list td button {
+          width: 20px;
+          height: 20px;
+          margin: 0; }
+          html body .main .list td button i {
+            font-size: 20px; }
+      html body .main .list tr {
+        background-color: #dadada; }
+      html body .main .list tr:nth-child(even) {
+        background-color: #adadad; }
+      html body .main #searchBox {
+        text-align: center;
+        width: 100%; }
+        html body .main #searchBox input {
+          all: unset;
+          padding: 5px;
+          margin: 5px;
+          background-color: #ffffff;
+          width: 40%; }
       html body .main button {
         all: unset;
         cursor: pointer;
@@ -45,121 +87,183 @@ html {
         background-color: white;
         padding: 10px;
         border-radius: 10px;
-        text-align: center; }
+        text-align: center;
+        margin: 5px; }
         html body .main button i {
           font-size: 40px; }
         html body .main button p {
           width: 100%;
           font-size: 15px; }
-    html body .sidebar {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-content: flex-start;
-      padding: 0.5%;
-      height: 98%;
-      background-color: #cecece;
-      width: 35px;
-      transition: 0.5s; }
-      html body .sidebar a {
-        text-decoration: none;
-        align-self: flex-start;
-        display: flex;
-        flex-wrap: nowrap;
-        cursor: pointer;
-        margin: 2px;
+    html body .planBox {
+      margin: 10px;
+      width: 98%;
+      height: 80%;
+      position: relative; }
+      html body .planBox .planBase {
+        position: absolute;
+        display: grid;
         width: 100%;
-        color: #777; }
-        html body .sidebar a:hover, html body .sidebar a:focus {
-          color: black; }
-        html body .sidebar a p {
-          display: inline;
-          width: 0;
-          overflow: hidden;
-          white-space: nowrap;
-          font-size: 0;
-          margin-left: 5px; }
-        html body .sidebar a i {
-          display: inline;
-          font-size: 30px; }
-      html body .sidebar:hover, html body .sidebar:focus {
-        justify-content: flex-start;
-        justify-items: flex-start;
-        transition: 0.5s;
-        width: 250px; }
-        html body .sidebar:hover p, html body .sidebar:focus p {
-          height: auto;
-          width: auto;
-          font-size: 20px; }
-      html body .sidebar .down {
-        align-self: flex-end; }
-      html body .sidebar .active {
-        color: rgba(0, 0, 0, 0.7); }
-  html .logreg {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    background: #ddd; }
-    html .logreg main {
-      margin-top: 10%;
-      background: #eee;
-      width: 40%;
-      min-width: 500px;
-      padding: 25px 15px;
-      border-radius: 10px; }
-      html .logreg main hr {
-        all: unset;
-        width: 100%; }
-      html .logreg main h1 {
-        font-size: 30px;
-        width: 100%;
-        text-align: center;
-        margin-bottom: 20px; }
-      html .logreg main form {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap; }
-        html .logreg main form input:not([type=checkbox]) {
-          all: unset;
-          background: #ffffff;
-          padding: 5px;
-          margin: 5px;
-          width: 80%;
-          font-size: 19px; }
-        html .logreg main form input[type=submit] {
-          justify-self: flex-end;
-          width: auto;
-          font-size: 20px;
-          padding: 7px; }
-        html .logreg main form #passPowerBox {
-          width: 80%;
-          background: #ffcccc;
-          display: none; }
-          html .logreg main form #passPowerBox p {
-            width: 100%;
-            text-align: center;
-            padding: 5px;
-            font-size: 19px; }
-        html .logreg main form .err {
-          color: red;
-          text-align: left; }
-        html .logreg main form .informer {
-          color: #aaa;
+        height: 100%;
+        grid-template-columns: 4% repeat(7, 13.7%);
+        grid-template-rows: 5% repeat(24, 3.95%);
+        background-color: rgba(255, 255, 255, 0.3); }
+        html body .planBox .planBase div {
+          padding: 1px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 12px; }
+        html body .planBox .planBase .dayInf {
           text-align: center;
-          font-style: italic; }
-        html .logreg main form .success {
-          text-align: left;
-          color: forestgreen; }
-        html .logreg main form .left {
-          text-align: left; }
-        html .logreg main form p {
-          width: 80%;
-          text-align: right; }
-          html .logreg main form p a {
-            margin: 1px;
-            color: #787878;
-            text-decoration: underline; }
+          font-size: 20px; }
+        html body .planBox .planBase .hourInf {
+          grid-column: 1; }
+      html body .planBox .overlayLinesH {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        position: absolute;
+        grid-template-columns: 4% repeat(7, 0.1% 13.6%);
+        grid-template-rows: 100%; }
+        html body .planBox .overlayLinesH .line {
+          background-color: rgba(0, 0, 0, 0.1); }
+      html body .planBox .overlayLinesW {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        position: absolute;
+        grid-template-columns: 100%;
+        grid-template-rows: 5% repeat(24, 0.1% 3.85%); }
+        html body .planBox .overlayLinesW .line {
+          background-color: rgba(0, 0, 0, 0.1); }
+      html body .planBox .planData {
+        position: absolute;
+        display: grid;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        grid-template-columns: 4% repeat(7, 13.7%);
+        grid-template-rows: 5% repeat(288, 0.329861%); }
+        html body .planBox .planData div {
+          padding: 1px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 12px; }
+        html body .planBox .planData .activity {
+          cursor: pointer; }
+  html .sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    padding: 0.5%;
+    height: 98%;
+    background-color: #cecece;
+    width: 35px;
+    transition: 0.5s; }
+    html .sidebar a {
+      text-decoration: none;
+      align-self: flex-start;
+      display: flex;
+      flex-wrap: nowrap;
+      cursor: pointer;
+      margin: 2px;
+      width: 100%;
+      color: #777; }
+      html .sidebar a:hover, html .sidebar a:focus {
+        color: black; }
+      html .sidebar a p {
+        display: inline;
+        width: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        font-size: 0;
+        margin-left: 5px; }
+      html .sidebar a i {
+        display: inline;
+        font-size: 30px; }
+    html .sidebar:hover, html .sidebar:focus {
+      justify-content: flex-start;
+      justify-items: flex-start;
+      transition: 0.5s;
+      width: 250px; }
+      html .sidebar:hover p, html .sidebar:focus p {
+        height: auto;
+        width: auto;
+        font-size: 20px; }
+    html .sidebar .down {
+      align-self: flex-end; }
+    html .sidebar .active {
+      color: rgba(0, 0, 0, 0.7); }
+
+.logreg {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: #ddd; }
+  .logreg main {
+    margin-top: 10%;
+    background: #eee;
+    width: 40%;
+    min-width: 500px;
+    padding: 25px 15px;
+    border-radius: 10px; }
+    .logreg main hr {
+      all: unset;
+      width: 100%; }
+    .logreg main h1 {
+      font-size: 30px;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px; }
+    .logreg main form {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap; }
+      .logreg main form input:not([type=checkbox]) {
+        all: unset;
+        background: #ffffff;
+        padding: 5px;
+        margin: 5px;
+        width: 80%;
+        font-size: 19px; }
+      .logreg main form input[type=submit] {
+        justify-self: flex-end;
+        width: auto;
+        font-size: 20px;
+        padding: 7px; }
+      .logreg main form #passPowerBox {
+        width: 80%;
+        background: #ffcccc;
+        display: none; }
+        .logreg main form #passPowerBox p {
+          width: 100%;
+          text-align: center;
+          padding: 5px;
+          font-size: 19px; }
+      .logreg main form .err {
+        color: red;
+        text-align: left; }
+      .logreg main form .informer {
+        color: #aaa;
+        text-align: center;
+        font-style: italic; }
+      .logreg main form .success {
+        text-align: left;
+        color: forestgreen; }
+      .logreg main form .left {
+        text-align: left; }
+      .logreg main form p {
+        width: 80%;
+        text-align: right; }
+        .logreg main form p a {
+          margin: 1px;
+          color: #787878;
+          text-decoration: underline; }
 
 /*# sourceMappingURL=styles.css.map */

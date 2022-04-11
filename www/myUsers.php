@@ -17,11 +17,19 @@ if ($_SESSION['isLoggedIn'] != true) {
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="body">
 <?php
 require_once "sidebar.php";
 renderNav(2);
 ?>
+<main class="main">
+    <h1>Witaj, <b><?php echo $_SESSION['firstname']; ?></b></h1>
+    <h2>Twoje zajęcia</h2>
+    <input type="text" placeholder="Wyszukaj">
+    <table class="list">
+
+    </table>
+</main>
 </body>
 </html>
 

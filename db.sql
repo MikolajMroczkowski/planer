@@ -22,6 +22,8 @@ create table if not exists activities
     owner        int                           null,
     notifyBySms  bit            default b'0'   null,
     notifyByMail bit            default b'0'   null,
+    notifyBefore int            default 10     null,
+    location     text                          null,
     time         int            default 60     null,
     price        decimal(15, 2) default 100.00 null,
     constraint planned_activities_id_uindex
