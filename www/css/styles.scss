@@ -124,10 +124,22 @@ html {
         }
       }
     }
+    .mobilePlanBox{
+      display: none;
+      width: 100%;
+      @media only screen and (max-width: 850px) {
+        display: flex;
+      }
+    }
     .planBox{
+      @media only screen and (max-width: 850px) {
+        display: none;
+      }
       margin: 10px;
       width: 98%;
       height: 80%;
+      min-width: 800px;
+      min-height: 400px;
       position: relative;
       .planBase {
         position: absolute;
@@ -192,6 +204,10 @@ html {
           justify-content: center;
           align-items: center;
           font-size: 12px;
+          p{
+            overflow-wrap: anywhere;
+            height: 100%;
+          }
         }
 
         .activity {
@@ -203,6 +219,7 @@ html {
   }
 
   .sidebar {
+    z-index: 5;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

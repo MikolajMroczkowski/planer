@@ -20,7 +20,7 @@ if ($_SESSION['isLoggedIn'] != true) {
 <body class="body">
 <?php
 require_once "sidebar.php";
-renderNav(2);
+renderNav(1);
 ?>
 <main class="main">
     <div class="modal">

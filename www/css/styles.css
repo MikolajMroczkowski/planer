@@ -94,11 +94,22 @@ html {
         html body .main button p {
           width: 100%;
           font-size: 15px; }
+    html body .mobilePlanBox {
+      display: none;
+      width: 100%; }
+      @media only screen and (max-width: 850px) {
+        html body .mobilePlanBox {
+          display: flex; } }
     html body .planBox {
       margin: 10px;
       width: 98%;
       height: 80%;
+      min-width: 800px;
+      min-height: 400px;
       position: relative; }
+      @media only screen and (max-width: 850px) {
+        html body .planBox {
+          display: none; } }
       html body .planBox .planBase {
         position: absolute;
         display: grid;
@@ -152,9 +163,13 @@ html {
           justify-content: center;
           align-items: center;
           font-size: 12px; }
+          html body .planBox .planData div p {
+            overflow-wrap: anywhere;
+            height: 100%; }
         html body .planBox .planData .activity {
           cursor: pointer; }
   html .sidebar {
+    z-index: 5;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

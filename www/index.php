@@ -43,13 +43,18 @@ renderNav(0);
         </i>
         <p>Następny tydzień</p>
     </button>
+    <div class="mobilePlanBox">
+        <p>Plan grid nie jest dostępny w trybie mobilnym</p>
+    </div>
     <div class="planBox">
         <div class="planData">
             <?php
-            for ($x=0; $x<25; $x++){
-                $day = rand(2,7);
-                $hour = rand(0,23);
-                echo '<div class="activity" style="background-color: rgba(100,255,100,0.4); grid-column: '.$day.'; grid-row: '.((($hour)*12)+2).' / '.((($hour+1.5)*12)+2).';"><p>'.($hour).': </p></div>';
+            require "functions.php";
+            for ($x = 0; $x < 10; $x++) {
+                $day = rand(2, 7);
+                $hour = rand(0, 23);
+                $text = randString(128);
+                echo '<div class="activity" style="background-color: rgba(0,255,255,0.4); grid-column: ' . $day . '; grid-row: ' . ((($hour) * 12) + 2) . ' / ' . ((($hour + 2.5) * 12) + 2) . ';"><p>' . $text . ': </p></div>';
             }
             ?>
         </div>
@@ -73,10 +78,10 @@ renderNav(0);
         </div>
         <div class="overlayLinesW">
             <?php
-                for($x=0; $x<24;$x++){
-                    echo "<div></div>";
-                    echo "<div class='line'></div>";
-                }
+            for ($x = 0; $x < 24; $x++) {
+                echo "<div></div>";
+                echo "<div class='line'></div>";
+            }
             ?>
         </div>
         <div class="planBase">
@@ -96,15 +101,12 @@ renderNav(0);
 
             <div class="dayInf">Niedziela</div>
             <?php
-            for ($x=0; $x<24; $x++){
-                echo '<div class="hourInf">'.($x).':00</div>';
+            for ($x = 0; $x < 24; $x++) {
+                echo '<div class="hourInf">' . ($x) . ':00</div>';
             }
             ?>
         </div>
-
-
     </div>
-
 </main>
 </body>
 </html>
