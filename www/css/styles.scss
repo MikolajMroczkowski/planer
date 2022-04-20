@@ -52,6 +52,26 @@ html {
         width: 60%;
       }
     }
+    .lock{
+      z-index: 9;
+      background: #000;
+      display: flex;
+      height: 100%;
+      overflow: hidden;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      width: 100%;
+
+      h1 {
+        font-size: 60px;
+        color: white;
+
+        b {
+          font-weight: bold;
+        }
+      }
+    }
     .main {
       background-color: #eaeaea;
       width: 100%;

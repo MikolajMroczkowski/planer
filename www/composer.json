@@ -1,5 +1,8 @@
 {
     "require": {
-        "phpmailer/phpmailer": "^6.6"
+        "phpmailer/phpmailer": "^6.6",
+        "lasserafn/php-initial-avatar-generator": "^4.2",
+        "openpayu/openpayu": "^2.3",
+        "phpoffice/phpspreadsheet": "^1.22"
     }
 }

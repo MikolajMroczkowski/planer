@@ -42,7 +42,7 @@ if ($_SESSION['isLoggedIn'] == true) {
         </div>
         <input type="password" name="repassword" placeholder="Powtórz Hasło...">
         <hr>
-        <div class="h-captcha" data-sitekey="f7514abd-6389-4a9a-b94a-fa3c9a7cae2a"></div>
+        <div class="h-captcha" data-sitekey="<?php echo $hCaptchaSiteKey ?>"></div>
         <hr>
         <p>
             <a href="login.php">Zaloguj się</a>
@@ -53,7 +53,7 @@ if ($_SESSION['isLoggedIn'] == true) {
         if ($_POST) {
             if (checkIsPostSet($_POST['firstname'])&&checkIsPostSet($_POST['lastname'])&&checkIsPostSet($_POST['login'])&&checkIsPostSet($_POST['mail'])&&checkIsPostSet($_POST['phone'])&&checkIsPostSet($_POST['password'])&&checkIsPostSet($_POST['repassword'])) {
                 $data = array(
-                    'secret' => "0xF2207d6E3e82eb7Bb7012C193Cfb66516a5a8dAd",
+                    'secret' => $hCaptchaSecret,
                     'response' => $_POST['h-captcha-response']
                 );
                 $verify = curl_init();

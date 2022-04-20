@@ -6,18 +6,210 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit4324a6e3ef7b33f7394e400e3a19ffb7
 {
+    public static $files = array (
+        '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
+        '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        '2cffec82183ee1cea088009cef9a6fc3' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier.composer.php',
+        'dc1275c308c5b416beb314b6317daca2' => __DIR__ . '/..' . '/overtrue/pinyin/src/const.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
+        's' => 
+        array (
+            'setasign\\Fpdi\\' => 14,
+        ),
+        'Z' => 
+        array (
+            'ZipStream\\' => 10,
+        ),
+        'S' => 
+        array (
+            'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'SVG\\' => 4,
+        ),
         'P' => 
         array (
+            'Psr\\SimpleCache\\' => 16,
+            'Psr\\Log\\' => 8,
+            'Psr\\Http\\Message\\' => 17,
+            'Psr\\Http\\Client\\' => 16,
+            'PhpOffice\\PhpSpreadsheet\\' => 25,
             'PHPMailer\\PHPMailer\\' => 20,
+        ),
+        'O' => 
+        array (
+            'Overtrue\\Pinyin\\' => 16,
+        ),
+        'M' => 
+        array (
+            'MyCLabs\\Enum\\' => 13,
+            'Mpdf\\' => 5,
+            'Matrix\\' => 7,
+        ),
+        'L' => 
+        array (
+            'LasseRafn\\Initials\\' => 19,
+            'LasseRafn\\InitialAvatarGenerator\\' => 33,
+            'LasseRafn\\' => 10,
+        ),
+        'I' => 
+        array (
+            'Intervention\\Image\\' => 19,
+        ),
+        'H' => 
+        array (
+            'Http\\Message\\' => 13,
+        ),
+        'G' => 
+        array (
+            'GuzzleHttp\\Psr7\\' => 16,
+        ),
+        'D' => 
+        array (
+            'DeepCopy\\' => 9,
+        ),
+        'C' => 
+        array (
+            'Complex\\' => 8,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'setasign\\Fpdi\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/setasign/fpdi/src',
+        ),
+        'ZipStream\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/maennchen/zipstream-php/src',
+        ),
+        'Symfony\\Polyfill\\Mbstring\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
+        'SVG\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/meyfa/php-svg/src',
+        ),
+        'Psr\\SimpleCache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/simple-cache/src',
+        ),
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
+        'Psr\\Http\\Message\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/http-factory/src',
+            1 => __DIR__ . '/..' . '/psr/http-message/src',
+        ),
+        'Psr\\Http\\Client\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/http-client/src',
+        ),
+        'PhpOffice\\PhpSpreadsheet\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpoffice/phpspreadsheet/src/PhpSpreadsheet',
+        ),
         'PHPMailer\\PHPMailer\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
         ),
+        'Overtrue\\Pinyin\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/overtrue/pinyin/src',
+        ),
+        'MyCLabs\\Enum\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/myclabs/php-enum/src',
+        ),
+        'Mpdf\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/mpdf/mpdf/src',
+        ),
+        'Matrix\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/markbaker/matrix/classes/src',
+        ),
+        'LasseRafn\\Initials\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/lasserafn/php-initials/src',
+        ),
+        'LasseRafn\\InitialAvatarGenerator\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/lasserafn/php-initial-avatar-generator/src',
+        ),
+        'LasseRafn\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/lasserafn/php-string-script-language/src',
+        ),
+        'Intervention\\Image\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/intervention/image/src/Intervention/Image',
+        ),
+        'Http\\Message\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-http/message-factory/src',
+        ),
+        'GuzzleHttp\\Psr7\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/psr7/src',
+        ),
+        'DeepCopy\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
+        ),
+        'Complex\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/markbaker/complex/classes/src',
+        ),
+    );
+
+    public static $prefixesPsr0 = array (
+        'H' => 
+        array (
+            'HTMLPurifier' => 
+            array (
+                0 => __DIR__ . '/..' . '/ezyang/htmlpurifier/library',
+            ),
+        ),
+    );
+
+    public static $classMap = array (
+        'AuthType' => __DIR__ . '/..' . '/openpayu/openpayu/lib/OpenPayU/AuthType/AuthType.php',
+        'AuthType_Basic' => __DIR__ . '/..' . '/openpayu/openpayu/lib/OpenPayU/AuthType/Basic.php',
+        'AuthType_Oauth' => __DIR__ . '/..' . '/openpayu/openpayu/lib/OpenPayU/AuthType/Oauth.php',
+        'AuthType_TokenRequest' => __DIR__ . '/..' . '/openpayu/openpayu/lib/OpenPayU/AuthType/TokenRequest.php',
+        'OauthCacheFile' => __DIR__ . '/..' . '/openpayu/openpayu/lib/OpenPayU/Oauth/Cache/OauthCacheFile.php',
+        'OauthCacheInterface' => __DIR__ . '/..' . '/openpayu/openpayu/lib/OpenPayU/Oauth/Cache/OauthCacheInterface.php',
+        'OauthCacheMemcached' => __DIR__ . '/..' . '/openpayu/openpayu/lib/OpenPayU/Oauth/Cache/OauthCacheMemcached.php',
+        'OauthGrantType' => __DIR__ . '/..' . '/openpayu/openpayu/lib/OpenPayU/Oauth/OauthGrantType.php',
+        'OauthResultClientCredentials' => __DIR__ . '/..' . '/openpayu/openpayu/lib/OpenPayU/Oauth/OauthResultClientCredentials.php',
+        'OpenPayU' => __DIR__ . '/..' . '/openpayu/openpayu/lib/OpenPayU/OpenPayU.php',
+        'OpenPayU_Configuration' => __DIR__ . '/..' . '/openpayu/openpayu/lib/OpenPayU/Configuration.php',
+        'OpenPayU_Exception' => __DIR__ . '/..' . '/openpayu/openpayu/lib/OpenPayU/OpenPayUException.php',
+        'OpenPayU_Exception_Authorization' => __DIR__ . '/..' . '/openpayu/openpayu/lib/OpenPayU/OpenPayUException.php',
+        'OpenPayU_Exception_Configuration' => __DIR__ . '/..' . '/openpayu/openpayu/lib/OpenPayU/OpenPayUException.php',
+        'OpenPayU_Exception_Network' => __DIR__ . '/..' . '/openpayu/openpayu/lib/OpenPayU/OpenPayUException.php',
+        'OpenPayU_Exception_Request' => __DIR__ . '/..' . '/openpayu/openpayu/lib/OpenPayU/OpenPayUException.php',
+        'OpenPayU_Exception_ServerError' => __DIR__ . '/..' . '/openpayu/openpayu/lib/OpenPayU/OpenPayUException.php',
+        'OpenPayU_Exception_ServerMaintenance' => __DIR__ . '/..' . '/openpayu/openpayu/lib/OpenPayU/OpenPayUException.php',
+        'OpenPayU_Http' => __DIR__ . '/..' . '/openpayu/openpayu/lib/OpenPayU/Http.php',
+        'OpenPayU_HttpCurl' => __DIR__ . '/..' . '/openpayu/openpayu/lib/OpenPayU/HttpCurl.php',
+        'OpenPayU_Oauth' => __DIR__ . '/..' . '/openpayu/openpayu/lib/OpenPayU/Oauth/Oauth.php',
+        'OpenPayU_Order' => __DIR__ . '/..' . '/openpayu/openpayu/lib/OpenPayU/v2/Order.php',
+        'OpenPayU_Refund' => __DIR__ . '/..' . '/openpayu/openpayu/lib/OpenPayU/v2/Refund.php',
+        'OpenPayU_Result' => __DIR__ . '/..' . '/openpayu/openpayu/lib/OpenPayU/Result.php',
+        'OpenPayU_Retrieve' => __DIR__ . '/..' . '/openpayu/openpayu/lib/OpenPayU/v2/Retrieve.php',
+        'OpenPayU_Shop' => __DIR__ . '/..' . '/openpayu/openpayu/lib/OpenPayU/v2/Shop.php',
+        'OpenPayU_Token' => __DIR__ . '/..' . '/openpayu/openpayu/lib/OpenPayU/v2/Token.php',
+        'OpenPayU_Util' => __DIR__ . '/..' . '/openpayu/openpayu/lib/OpenPayU/Util.php',
+        'OpenPayuOrderStatus' => __DIR__ . '/..' . '/openpayu/openpayu/lib/OpenPayU/OpenPayuOrderStatus.php',
+        'PayuShop' => __DIR__ . '/..' . '/openpayu/openpayu/lib/OpenPayU/Model/PayuShop.php',
+        'PayuShopBalance' => __DIR__ . '/..' . '/openpayu/openpayu/lib/OpenPayU/Model/PayuShop/PayuShopBalance.php',
+        'ResultError' => __DIR__ . '/..' . '/openpayu/openpayu/lib/OpenPayU/ResultError.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
@@ -25,6 +217,8 @@ class ComposerStaticInit4324a6e3ef7b33f7394e400e3a19ffb7
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit4324a6e3ef7b33f7394e400e3a19ffb7::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit4324a6e3ef7b33f7394e400e3a19ffb7::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit4324a6e3ef7b33f7394e400e3a19ffb7::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit4324a6e3ef7b33f7394e400e3a19ffb7::$classMap;
 
         }, null, ClassLoader::class);
     }
